@@ -181,7 +181,7 @@ This rootkit hides bind shell port, reverse shell port and rootkit built-in daem
 </p>
 
 <p>
-<b>Persistence</b>
+<h4>Persistence</h4>
 <br>
   The rootkit is activated every time the system starts up. After the reboot, wait for 2 minutes, the rootkit will be activated.
 </p>
