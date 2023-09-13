@@ -1,0 +1,11 @@
+[Unit]
+Description=BDS Startup Script
+Before=poweroff.target halt.target shutdown.target reboot.target
+
+
+[Service]
+ExecStart=/bin/bash /opt/bds_elf/rk_stop.sh
+RemainAfterExit=yes
+
+[Install]
+RequiredBy=shutdown.target reboot.target poweroff.target halt.target exit.target
