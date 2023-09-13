@@ -117,7 +117,7 @@ install_systemd() {
         systemctl enable rk.service
 	systemctl enable rk_stop.service
     else
-	cp rc.local /etc/
+	cp inits/rc.local /etc/
 	chmod +x /etc/rc.local
     fi
     echo "[+] init script installed"
