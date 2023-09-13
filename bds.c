@@ -31,13 +31,4 @@ twitter : https://twitter.com/bluedragonsec
 #include "includes/readdir64.c"
 #include "includes/rmdir.c"
 
-void __attribute ((constructor)) init (void) {
-	if (debug == 1)
-		printf("\nconstructor\n");
-}
-
-void __attribute ((destructor)) vexit (void)  {
-	if (debug == 1)
-		printf("\ndestructor\n");
-}
 
