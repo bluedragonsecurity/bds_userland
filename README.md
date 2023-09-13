@@ -169,13 +169,13 @@ User logs will be cleaned during rootkit installation
 
 
 <p>
-<b>Process Hiding</b>
+<h4>Process Hiding</h4>
 <br>
 This rootkit hides bind shell process, reverse shell process and rootkit built-in daemon process.
 </p>
 
 <p>
-<b>Port Hiding</b>
+<h4>Port Hiding</h4>
 <br>
 This rootkit hides bind shell port, reverse shell port and rootkit built-in daemon port.
 </p>
