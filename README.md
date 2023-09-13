@@ -37,7 +37,8 @@ In case you haven't installed gcc, install it by running the installer script :
 </p>
 
 <p>
-<h4>Privilege Escalation</h4>
+<br>
+  <h4>Privilege Escalation</h4>
 <br>
 Once the rootkit installed on the system, in case you lost root privilege, you can regain root privilege by typing :
 <br>
@@ -54,6 +55,7 @@ root@robotsoft:~#
 </p>
 
 <p>
+<br>
 <h4>Using the Rootkit Daemon</h4>
 <br>
 Rootkit built in daemon is listening on port 31335.
@@ -84,6 +86,7 @@ CMD :
 </p>
 
 <p>
+<br>
 <h4>Activating Reverse Shell</h4>
 <br>
 <br>
@@ -129,6 +132,7 @@ Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu A
 </pre>
 </p>
 <p>
+<br>
 <h4>Connecting to Bind Shell Port</h4>
 <br>
 Bind shell port on server (which you have installed rootkit) is at port 31337, the password is <b>bluedragonsec</b></b>.
@@ -152,6 +156,7 @@ Linux robotsoft-virtualbox 6.2.0-20-generic #20-Ubuntu SMP PREEMPT_DYNAMIC Thu A
 </p>
 
 <p>
+<br>
 <h4>Hiding Files and Directories</h4>
 <br>
 To hide file and directory just give prefix bds_ to file name and directory name
@@ -167,20 +172,22 @@ robotsoft
 User logs will be cleaned during rootkit installation
 </p>
 
-
 <p>
-<h4>Process Hiding</h4>
+<br>
+  <h4>Process Hiding</h4>
 <br>
 This rootkit hides bind shell process, reverse shell process and rootkit built-in daemon process.
 </p>
 
 <p>
+<br>
 <h4>Port Hiding</h4>
 <br>
 This rootkit hides bind shell port, reverse shell port and rootkit built-in daemon port.
 </p>
 
 <p>
+<br>
 <h4>Persistence</h4>
 <br>
   The rootkit is activated every time the system starts up. After the reboot, wait for 2 minutes, the rootkit will be activated.
