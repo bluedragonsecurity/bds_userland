@@ -13,7 +13,7 @@ Twitter : https://twitter.com/bluedragonsec
 - Clean logs and bash history during installation
 
 ====INSTALLATION====
-
+You need root privilege for installing this rootkit.
 In case you have installed gcc, install it by running the installer script:
 ______________________
 
