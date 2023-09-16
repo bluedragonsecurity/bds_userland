@@ -20,6 +20,7 @@ Twitter : https://twitter.com/bluedragonsec
 
 <p>
 <h3>Installation</h3>
+You need root privilege for installing this rootkit.
 <br>
 In case you have installed gcc, install it by running the installer script:
 <pre>
