@@ -10,11 +10,11 @@ Twitter : https://twitter.com/bluedragonsec
 <p>
 <h3>Features : </h3>
 <ul>
-  <li>Hide files and directories</li>
-  <li>Hide process</li>
-  <li>Hide bind shell port, bds daemon port and reverse shell port from netstat</li>
+  <li>Hides files and directories</li>
+  <li>Hides process</li>
+  <li>Hides bind shell port, bds daemon port and reverse shell port from netstat</li>
   <li>Rootkit persistence to survive after reboot</li>
-  <li>clean logs and bash history during installation</li>
+  <li>cleans logs and bash history during installation</li>
 </ul>
 </p>
 
