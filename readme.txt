@@ -6,11 +6,11 @@ Twitter : https://twitter.com/bluedragonsec
 
 ====FEATURES====
 
-- Hide files and directories
-- Hide process
-- Hide bind shell port, bds daemon port and reverse shell port from netstat
+- Hides files and directories
+- Hides process
+- Hides bind shell port, bds daemon port and reverse shell port from netstat
 - Rootkit persistence to survive after reboot
-- Clean logs and bash history during installation
+- Cleans logs and bash history during installation
 
 ====INSTALLATION====
 You need root privilege for installing this rootkit.
