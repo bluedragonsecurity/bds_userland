@@ -1,6 +1,6 @@
 <h2>BDS Linux Userland Rootkit</h2>
 <br>
-Developed by : Antonius
+Developed by : Antonius (wisdom)
 <br>
 Website : www.bluedragonsec.com
 <br>
